@@ -34,10 +34,10 @@ padding-top: 30px;
 `
 const Head = styled.h3`
 max-width:100%;
-margin-top:3%;
+
 color: white;
 text-align: center;
-font-size: 60px;
+font-size: 55px;
 span{
     color:#ff3d3d;
 }

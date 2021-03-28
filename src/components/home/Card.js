@@ -21,7 +21,7 @@ const Card = () => {
   );
 };
 const Cards = styled.div`
-  padding: 10px 16px;
+  padding: 10px;
   /* background-image: url(https://images.pexels.com/photos/841131/pexels-photo-841131.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1080); */
   /* background-size: cover; */
   /* min-height: 100vh; */
@@ -30,20 +30,21 @@ const Cards = styled.div`
   align-items: center;
 `;
 const Container = styled.div`
+font-family: 'Poppins', sans-serif;
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.4);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.5s;
   width: 30rem;
- height: 31rem;
+  height: 34rem;
   border: none;
   font-size: 1.5rem;
   padding: 0.5rem;
-  margin: 0 2rem;
-  font-family: roboto;
+  margin: 0 3rem;
+  
   flex-wrap: wrap;
   &:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+    box-shadow: 0 8px 16px 0 rgba(204, 204, 204, 0.8);
   }
   img {
     width: 100%;
@@ -56,7 +57,7 @@ const Container = styled.div`
     margin-bottom: 0.5rem;
   }
   p {
-    font-family: Times;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     color: #c0c0c0;
   }
@@ -64,7 +65,7 @@ const Container = styled.div`
     font-size: 0.8rem;
     color: lightgreen;
     text-align: right;
-    margin: 1rem;
+    margin: 0.5rem;
   }
 `;
 

@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import styled from "styled-components";
-
+import {Link} from "react-router-dom";
 import { workout } from "./content";
 
 export const Workout = () => {
@@ -13,6 +13,10 @@ export const Workout = () => {
             <img key={info.img} src={info.img} alt="" />
             <h3>{info.title}</h3>
             <p>{info.content}</p>
+            <Link to={info.path}>
+            <Button>LETS START</Button>
+            </Link>
+            
           </Container>
         </>
       ))}
@@ -30,7 +34,7 @@ const Cards = styled.div`
 `;
 const Container = styled.div`
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.5s;
   width: 50rem;
@@ -39,8 +43,9 @@ const Container = styled.div`
   font-size: 1.5rem;
   padding: 0.8rem;
   margin: 0 2rem;
-  font-family: roboto;
+  font-family: 'Poppins', sans-serif;
   flex-wrap: wrap;
+
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
   }
@@ -57,10 +62,36 @@ const Container = styled.div`
     margin-bottom: 0.5rem;
   }
   p {
-    font-family: Times;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     color: #c0c0c0;
   }
 `;
 
+const Button = styled.button`
+margin: auto;
+margin-top: 20px;
+display:block;
+text-decoration:none;
+max-width:35%;
+padding: 12px;
+font-size: 20px;
+
+/* border: 3px solid whitesmoke; */
+border:none;
+background: rgba(0, 0, 0,1);
+border-radius:10px;
+color: rgb(255, 255, 255);
+cursor: pointer;
+&:hover{
+  
+    background: rgb(255, 255, 255);
+    color:black;
+    transition-duration: 0.9s;
+    /* box-shadow: 0 8px 16px 0 rgba(204, 204, 204, 0.8); */
+    /* box-shadow: 0 0 30px   rgba(204, 204, 204, 0.8); */
+    box-shadow: 0 0 40px  #fff;
+}
+
+`
 export default Workout;

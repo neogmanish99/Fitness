@@ -11,6 +11,7 @@ import LossGainPage from "./pages/LossGainPage";
 import TipsPage from "./pages/TipsPage";
 import WorkoutPage from './pages/WorkoutPage'
 
+
 const App = () => {
   return (
     <Switch>
